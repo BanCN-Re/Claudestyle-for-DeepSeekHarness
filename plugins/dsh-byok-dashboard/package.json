@@ -1,0 +1,23 @@
+{
+  "name": "dsh-byok-dashboard",
+  "version": "1.0.0",
+  "description": "IDE BYOK 额度药丸：在 DSH 输入框下方显示当前模型所属供应商的账号池剩余额度（由 ZCode 的 byok-dashboard 迁移而来）。",
+  "type": "module",
+  "main": "index.js",
+  "license": "MIT",
+  "keywords": ["dsh-plugin", "deepseek-harness", "dsh", "byok", "quota"],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "files": ["index.js", "client.js", "lib", "cordis.patch.yml", "README.md", "LICENSE"],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": ["slots", "connection", "modelDirectories"]
+    }
+  }
+}

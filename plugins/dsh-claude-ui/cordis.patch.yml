@@ -1,0 +1,3 @@
+- insert:
+    - id: claude-ui
+      name: 'dsh-claude-ui'

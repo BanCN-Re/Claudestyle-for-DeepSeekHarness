@@ -1,0 +1,3 @@
+- insert:
+    - id: claude-theme
+      name: 'dsh-claude-theme'

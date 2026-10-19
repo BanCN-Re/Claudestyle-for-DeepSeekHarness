@@ -1,0 +1,8 @@
+node_modules/
+*.bak
+*.bak-*
+*.log
+*.orig
+plugins/dsh-claude-theme/fonts/*.ttf
+plugins/dsh-claude-theme/fonts/*.otf
+plugins/dsh-claude-theme/fonts/*.woff2
